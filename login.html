@@ -47,15 +47,15 @@
 
     <!-- Main Section -->
     <main>
-        <section class="flex-col justify-center w-1/2 mx-auto space-y-7 mt-20 hidden">
+        <section id="button-section" class="flex flex-col justify-center w-1/2 mx-auto space-y-7 mt-20">
             <button id="log-in" class="border-2 border-black text-3xl p-4 w-1/2 mx-auto hover:bg-black hover:text-white">Log In</button>
             <button id="sign-up" class="border-2 border-black text-3xl p-4 w-1/2 mx-auto hover:bg-black hover:text-white">Sign Up</button>
         </section>
 
         <!-- Log-In Form -->
-        <section class="">
+        <section id="login-form" class="hidden">
             <section class="mt-20 p-4 flex-col justify-center w-1/2 mx-auto">
-                <h3 class="text-5xl mb-20 text-center">Log In</h3>
+                <h3 class="text-5xl mb-16 text-center">Log In</h3>
                 <section class="mb-8 flex justify-between w-3/4 mx-auto">
                     <label for="log-in-email" class="text-3xl">Email:</label>
                     <input type="email" name="" id="log-in-email"
@@ -68,8 +68,9 @@
                         class="text-black font-light text-2xl border-b-2 border-black p-1 focus:border-none" placeholder="password">
                 </section>
             </section>
-            <section class="flex justify-center">
-                <i id="log-in-confirm" class="fa-sharp fa-solid fa-arrow-right bg-black text-white text-4xl p-2 rounded-md text-center"></i>
+            <section class="flex justify-center gap-4">
+                <i id="close-confirm" class="fa-sharp fa-solid fa-xmark bg-black text-white text-4xl p-2 rounded-md text-center w-14"></i>
+                <i id="log-in-confirm" class="fa-sharp fa-solid fa-arrow-right bg-black text-white text-4xl p-2 rounded-md text-center w-14"></i>
             </section>
         </section>
     </main>
